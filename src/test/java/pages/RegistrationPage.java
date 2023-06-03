@@ -65,7 +65,7 @@ public class RegistrationPage {
     }
 
     public RegistrationPage upLoadFile(String path) {
-        $("#uploadPicture").uploadFile(new File(path));
+        $("#uploadPicture").uploadFromClasspath(path);
         return this;
     }
 
