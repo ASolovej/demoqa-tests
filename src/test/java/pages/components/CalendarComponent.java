@@ -15,7 +15,7 @@ public class CalendarComponent {
     }
 
     public void setDay(String day) {
-        $(".react-datepicker__day--0" + day + ":not(react-datepicker__day--outside-month)").click();
+        $(".react-datepicker__day--0" + day + ":not(.react-datepicker__day--outside-month").click();
     }
 
 }
