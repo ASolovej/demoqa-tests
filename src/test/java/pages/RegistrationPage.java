@@ -1,6 +1,7 @@
 package pages;
 
 import com.codeborne.selenide.Selectors;
+import io.qameta.allure.Step;
 import pages.components.CalendarComponent;
 import pages.components.ModalComponent;
 
@@ -15,11 +16,14 @@ public class RegistrationPage {
 
     private CalendarComponent calendarComponent;
     private ModalComponent modalComponent;
+
     public RegistrationPage() {
-        open("/");
+//        open("/");
+        open("https://demoqa.com/automation-practice-form");
         modalComponent = new ModalComponent();
         calendarComponent = new CalendarComponent();
     }
+
 
     public RegistrationPage setFirstName(String firstName) {
         $("#firstName").setValue(firstName);
