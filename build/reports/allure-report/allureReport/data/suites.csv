@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Jun 07 22:42:57 MSK 2023","Wed Jun 07 22:43:08 MSK 2023","11621","","RegistrationTests","","RegistrationTests","checkStudentRegistrationForm","checkStudentRegistrationForm()",""
