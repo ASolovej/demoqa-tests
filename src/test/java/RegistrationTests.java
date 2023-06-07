@@ -1,9 +1,10 @@
 import data.RegistrationTestsData;
 import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 
 public class RegistrationTests extends BaseTest{
-    @RepeatedTest(200)
+    @Test
     public void checkStudentRegistrationForm() {
         RegistrationTestsData data = new RegistrationTestsData();
 
