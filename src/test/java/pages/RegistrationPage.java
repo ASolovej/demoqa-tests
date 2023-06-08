@@ -23,6 +23,7 @@ public class RegistrationPage {
         open("https://demoqa.com/automation-practice-form");
         $("footer").should(Condition.visible, Duration.ofSeconds(5));
         executeJavaScript("$('footer').remove()");
+        executeJavaScript("$('#fixedban').remove()");
         modalComponent = new ModalComponent();
         calendarComponent = new CalendarComponent();
     }
