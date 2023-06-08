@@ -1,16 +1,17 @@
 package pages;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selectors;
 import io.qameta.allure.Step;
 import pages.components.CalendarComponent;
 import pages.components.ModalComponent;
 
 import java.io.File;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.open;
+import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationPage {
 
@@ -20,6 +21,8 @@ public class RegistrationPage {
     public RegistrationPage() {
 //        open("/");
         open("https://demoqa.com/automation-practice-form");
+        $("footer").should(Condition.visible, Duration.ofSeconds(5));
+        executeJavaScript("$('footer').remove()");
         modalComponent = new ModalComponent();
         calendarComponent = new CalendarComponent();
     }
