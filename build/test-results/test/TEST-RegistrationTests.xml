@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RegistrationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-08T16:34:06" hostname="USER-PC" time="9.052">
+<testsuite name="RegistrationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-08T17:02:11" hostname="USER-PC" time="15.142">
   <properties/>
-  <testcase name="checkStudentRegistrationForm()" classname="RegistrationTests" time="9.052"/>
+  <testcase name="checkStudentRegistrationForm()" classname="RegistrationTests" time="15.142"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 114.0.5735.90 (386bc09e8f4f2e025eddae123f36f6263096ae49-refs/branch-heads/5735@{#1052}) on port 16401
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-июн. 08, 2023 7:34:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 114, so returning the closest version found: 113
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
