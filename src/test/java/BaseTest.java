@@ -16,8 +16,9 @@ public class BaseTest {
 
     @BeforeAll
     public static void setUp() {
-        Configuration.browserSize = "1920x1080";
+        Configuration.browserSize = System.getProperty("size", "1920x1080");
         Configuration.browser = System.getProperty("browser", "chrome");
+        Configuration.browserVersion = System.getProperty("version", "112");
         Configuration.pageLoadStrategy = "none";
         Configuration.baseUrl = "https://demoqa.com/automation-practice-form";
 //        Configuration.remote = "http://localhost:4444/wd/hub";
@@ -28,7 +29,6 @@ public class BaseTest {
                 "enableVideo", true
         ));
         Configuration.browserCapabilities = capabilities;
-//        Configuration.holdBrowserOpen = true;
     }
 
     @BeforeEach
