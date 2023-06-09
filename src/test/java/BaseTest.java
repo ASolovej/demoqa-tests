@@ -17,10 +17,11 @@ public class BaseTest {
     @BeforeAll
     public static void setUp() {
         Configuration.browserSize = "1920x1080";
-        Configuration.browser = "chrome";
+        Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.pageLoadStrategy = "none";
         Configuration.baseUrl = "https://demoqa.com/automation-practice-form";
-        Configuration.remote = "http://localhost:4444/wd/hub";
+//        Configuration.remote = "http://localhost:4444/wd/hub";
+        Configuration.remote = System.getProperty("selenoid", "http://localhost:4444/wd/hub");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,

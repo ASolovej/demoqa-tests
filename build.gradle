@@ -36,6 +36,14 @@ test {
     useJUnitPlatform()
 }
 
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+tasks.withType(Test) {
+    systemProperties(System.getProperties())
+}
+
 task test_ui(type:Test) {
     useJUnitPlatform() {
         includeTags("UI")
