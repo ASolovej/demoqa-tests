@@ -1,1 +1,0 @@
-{"uuid":"a3bfa994-470e-4dad-a866-62105c4c2968","name":"checkStudentRegistrationForm()","children":["46ac5f95-4b42-4918-b340-0f3c4ec8df78"],"befores":[{"name":"addListener","status":"passed","stage":"finished","steps":[],"attachments":[],"parameters":[],"start":1686170886556,"stop":1686170886565}],"afters":[],"start":1686170886475,"stop":1686170897040}

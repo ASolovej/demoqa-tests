@@ -1,8 +1,10 @@
 import data.RegistrationTestsData;
 import org.junit.jupiter.api.RepeatedTest;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 
+@Tag("UI")
 public class RegistrationTests extends BaseTest{
     @Test
     public void checkStudentRegistrationForm() {
