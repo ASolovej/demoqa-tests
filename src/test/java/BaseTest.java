@@ -21,7 +21,6 @@ public class BaseTest {
         Configuration.browserVersion = System.getProperty("version", "112");
         Configuration.pageLoadStrategy = "none";
         Configuration.baseUrl = "https://demoqa.com/automation-practice-form";
-//        Configuration.remote = "http://localhost:4444/wd/hub";
         Configuration.remote = System.getProperty("selenoid", "http://localhost:4444/wd/hub");
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
@@ -45,7 +44,9 @@ public class BaseTest {
     void addAttachments() {
         Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
-        Attach.browserConsoleLogs();
+        if (!Configuration.browser.equals("firefox")) {
+            Attach.browserConsoleLogs();
+        }
         Attach.addVideo();
     }
 }
