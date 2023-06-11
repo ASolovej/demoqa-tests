@@ -16,7 +16,6 @@ import static com.codeborne.selenide.Selenide.*;
 public class RegistrationPage {
 
     private CalendarComponent calendarComponent;
-    private ModalComponent modalComponent;
 
     public RegistrationPage() {
 //        open("/");
@@ -24,7 +23,6 @@ public class RegistrationPage {
         $("footer").should(Condition.visible, Duration.ofSeconds(5));
         executeJavaScript("$('footer').remove()");
         executeJavaScript("$('#fixedban').remove()");
-        modalComponent = new ModalComponent();
         calendarComponent = new CalendarComponent();
     }
 
@@ -106,34 +104,10 @@ public class RegistrationPage {
     }
 
     @Step("Нажать кнопку Submit")
-    public RegistrationPage clickSubmit() {
+    public ModalComponent clickSubmit() {
         $("#submit").click();
-        return this;
+        return new ModalComponent();
     }
-
-    public RegistrationPage verificationResultModal(String studentName, String email, String gender,
-                                                    String date, String subjects, String hobbies, String pictures,
-                                                    String address, String stateCity, String mobile) {
-        modalComponent.verificationModal();
-        Map<String, String> result = new HashMap<>();
-        {
-              result.put("Student Name", studentName);
-              result.put("Student Email", email);
-              result.put("Gender",gender);
-              result.put("Mobile", mobile);
-              result.put("Date of Birth", date);
-              result.put("Subjects", subjects);
-              result.put("Hobbies", hobbies);
-              result.put("Picture", pictures);
-              result.put("Address", address);
-              result.put("State and City", stateCity);
-        }
-        for (String key:result.keySet()) {
-            modalComponent.verificationResult(key, result.get(key));
-        }
-        return this;
-    }
-
 
 
 }
