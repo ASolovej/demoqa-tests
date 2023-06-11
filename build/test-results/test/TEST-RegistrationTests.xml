@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RegistrationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-09T18:55:45" hostname="USER-PC" time="13.106">
+<testsuite name="RegistrationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-11T13:49:12" hostname="USER-PC" time="17.658">
   <properties/>
-  <testcase name="checkStudentRegistrationForm()" classname="RegistrationTests" time="13.106"/>
+  <testcase name="checkStudentRegistrationForm()" classname="RegistrationTests" time="17.658"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[1686336948413	geckodriver	INFO	Listening on 127.0.0.1:31342
-1686336949196	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "34581" "--remote ... alhost:34581/,http://[::1]:34581/" "-no-remote" "-profile" "C:\\Users\\PROFES~1\\AppData\\Local\\Temp\\rust_mozprofileOCwXMy"
-console.warn: services.settings: Ignoring preference override of remote settings server
-console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
-1686336949750	Marionette	INFO	Marionette enabled
-Dynamically enable window occlusion 0
-1686336949758	Marionette	INFO	Listening on port 55348
-Read port: 55348
-WebDriver BiDi listening on ws://127.0.0.1:34581
-1686336949968	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
-DevTools listening on ws://127.0.0.1:34581/devtools/browser/427a1aa2-7ba1-45ca-b60e-a9611a368d5e
-JavaScript error: https://cdn.ad.plus/player/adplus.js, line 402: TypeError: g(...).setup is not a function
-console.warn: LoginRecipes: "Falling back to a synchronous message for: https://demoqa.com."
-1686336958897	RemoteAgent	INFO	Perform WebSocket upgrade for incoming connection from 127.0.0.1:55417
-1686336958902	CDP	WARN	Invalid browser preferences for CDP. Set "fission.webContentIsolationStrategy"to 0 and "fission.bfcacheInParent" to false before Firefox starts.
-1686336959064	Marionette	INFO	Stopped listening on port 55348
-Dynamically enable window occlusion 1
-]]></system-err>
+  <system-err><![CDATA[]]></system-err>
 </testsuite>
