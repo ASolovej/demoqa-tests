@@ -5,7 +5,7 @@
     "environment": "alexandr",
     "comment": "",
     "reportLink": "",
-    "language": "en",
+    "language": "ru",
     "allureFolder": "build/reports/allure-report/allureReport/",
     "enableChart": true
   },
