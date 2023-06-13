@@ -11,7 +11,7 @@ public class RegistrationTests extends BaseTest{
     @Feature("Форма регистрации")
     @Story("Заполнение формы регистрации")
     @Owner("Александр Соловьев")
-    @DisplayName("Проверка заполения формы регистрации")
+    @DisplayName("Проверка заполнения формы регистрации")
     @Severity(SeverityLevel.BLOCKER)
     @Link(value ="Form", url = "https://demoqa.com/automation-practice-form")
     @Test
@@ -38,7 +38,4 @@ public class RegistrationTests extends BaseTest{
                         data.getState()  + " " + data.getCity(), data.getNumberMobile());
 
     }
-
-
-
 }

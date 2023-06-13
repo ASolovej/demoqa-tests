@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RegistrationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-11T13:49:12" hostname="USER-PC" time="17.658">
+<testsuite name="RegistrationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-06-13T18:17:37" hostname="USER-PC" time="19.571">
   <properties/>
-  <testcase name="checkStudentRegistrationForm()" classname="RegistrationTests" time="17.658"/>
+  <testcase name="Проверка заполнения формы регистрации" classname="RegistrationTests" time="19.571"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

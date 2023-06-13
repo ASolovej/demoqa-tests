@@ -1,0 +1,15 @@
+Telegram username:@alexandr_allure_bot
+Telegram token:6247333971:AAFnS4-Mk4CsGUllcHzDML9NWLfsSk8mmk0
+Telegram chat id:-1001943452291
+
+
+
+Fetch bot updates and look for the chat id:
+curl https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/getUpdates | jq .message.chat.id
+curl https://api.telegram.org/bot6247333971:AAFnS4-Mk4CsGUllcHzDML9NWLfsSk8mmk0/getUpdates
+
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "123456789", "text": "This is a test from curl", "disable_notification": true}' https://api.telegram.org/bot$TELEGRAM_BOT_TOKEN/sendMessage
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1001943452291", "text": "Привет", disable_notification": true}' https://api.telegram.org/bot6247333971:AAFnS4-Mk4CsGUllcHzDML9NWLfsSk8mmk0/sendMessage
+
+Run jar
+java "-DconfigFile=notifications/config.json" -jar notifications/allure-notifications-4.2.1.jar
